@@ -24,7 +24,6 @@ html {
 .section-1 {
   width: 100%;
   height: 100vh;
-  display: none;
 }
 .section-1 .navbar-wrapper {
   width: 100%;
@@ -185,7 +184,6 @@ html {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  display: none;
 }
 .section-2 .clients-all-talents-wrapper {
   width: 120rem;
@@ -223,7 +221,6 @@ html {
 /* Section 3 */
 .section-3 {
   width: 100%;
-  display: none;
 }
 .section-3 .wrapper {
   width: 120rem;
@@ -266,34 +263,193 @@ html {
 /* Section 4 */
 .section-4 {
   width: 100%;
+  background-color: #f5f7fb;
+}
+.section-4 .wrapper {
+  width: 120rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5rem;
+  gap: 5rem;
+}
+.section-4 .wrapper .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-4 .wrapper .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-4 .wrapper .right img {
+  width: 20rem;
 }
 
 /* End Section 4 */
 /* Section 5 */
 .section-5 {
   width: 100%;
-  display: none;
+}
+.section-5 .wrapper {
+  width: 120rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5rem;
+  gap: 5rem;
+}
+.section-5 .wrapper .left img {
+  width: 50rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.section-5 .wrapper .right .action-btn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  color: #000;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #c3e7f1;
+  position: relative;
+}
+.section-5 .wrapper .right .action-btn::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #e0f2fd;
 }
 
 /* End Section 5 */
 /* Section 6 */
 .section-6 {
   width: 100%;
-  display: none;
+  background-color: #f5f7fb;
+}
+.section-6 .wrapper {
+  width: 120rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  gap: 5rem;
+}
+.section-6 .wrapper .left .testimonial {
+  font-size: 1.2rem;
+}
+.section-6 .wrapper .left .profile-details img {
+  width: 5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.section-6 .wrapper .right img {
+  width: 20rem;
 }
 
 /* End Section 6 */
 /* Section 7 */
 .section-7 {
   width: 100%;
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section-7 .wrapper {
+  width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  border-radius: 2rem;
+  background-color: #70d4a7;
+}
+.section-7 .wrapper .heading {
+  font-size: 6rem;
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.section-7 .wrapper .sub-heading {
+  font-size: 1.8rem;
+  margin: 0 auto 4rem auto;
+}
+.section-7 .wrapper .actions {
+  display: flex;
+  flex-direction: row;
+}
+.section-7 .wrapper .actions .get-started-btn {
+  padding: 1.5rem;
+  background-color: #000;
+  color: #fff;
+  border-radius: 0.3rem;
+  margin-right: 2rem;
+}
+.section-7 .wrapper .actions .lets-talk-btn {
+  padding: 1.5rem;
+  border-radius: 0.3rem;
+  color: #000;
+  border-style: solid;
+  border-width: 0.1rem;
+  border-color: #c3e7f1;
+  position: relative;
+}
+.section-7 .wrapper .actions .lets-talk-btn::after {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: #e0f2fd;
 }
 
 /* End Section 7 */
 /* Section 8 */
 .section-8 {
   width: 100%;
-  display: none;
+  display: flex;
+  justify-content: center;
+}
+.section-8 .footer {
+  width: 120rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+}
+.section-8 .footer .footer-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.section-8 .footer .footer-top .company-details .stars {
+  display: flex;
+  flex-direction: row;
+}
+.section-8 .footer .footer-bottom {
+  display: flex;
+}
+.section-8 .footer .footer-bottom .policies {
+  display: flex;
+}
+.section-8 .footer .footer-bottom .social-icons {
+  display: flex;
 }
 
 /* End Section 8 *//*# sourceMappingURL=styles.css.map */
