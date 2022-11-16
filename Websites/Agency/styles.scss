@@ -28,11 +28,11 @@ html {
 .section-1 {
     width: 100%;
     height: 100vh;
+    display: none;
 
     .navbar-wrapper {
         width: 100%;
         height: 8rem;
-        border-bottom: 0.1rem solid #aaa;
         display: flex;
         justify-content: center;
 
@@ -85,6 +85,27 @@ html {
                     align-items: center;
                     transition: border-bottom .1s;
 
+                    .nav-list-link {
+                        width: 100%;
+                        height: 100%;
+                        font-size: 1.7rem;
+                        font-weight: 400;
+                        text-transform: uppercase;
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
+                    
+                    .nav-list-link i {
+                        font-size: 1.5rem;
+                        margin-left: 0.5rem;
+                        transition: transform .3;
+                    }
+                    
+                    .navbar-list-item:hover .nav-list-link i {
+                        transform: rotateZ(180deg);
+                    }
+
                     .nav-dropdown {
                         width: 100%;
                         height: 20rem;
@@ -112,31 +133,10 @@ html {
                             color: #fff;
                         }
                     }
-
-                    .nav-list-link {
-                        width: 100%;
-                        height: 100%;
-                        font-size: 1.7rem;
-                        font-weight: 400;
-                        text-transform: uppercase;
-                        display: flex;
-                        flex-direction: row;
-                        align-items: center;
-                    }
-                    
-                    .nav-list-link i {
-                        font-size: 1.5rem;
-                        margin-left: 0.5rem;
-                        transition: transform .3;
-                    }
-                    
-                    .navbar-list-item:hover .nav-list-link i {
-                        transform: rotateZ(180deg);
-                    }
                 }
 
                 .navbar-list-item:hover {
-                    border-bottom: 0.2rem solid #fff;
+                    border-bottom: 0.2rem solid #000;
                 }
             }
 
@@ -147,77 +147,81 @@ html {
         }
     }
 
-    .banner {
-        width: 100%;
-        position: absolute;
-        top: 25%;
-        text-align: center;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
+    .banner-wrapper {
+        width: 120rem;
 
-        .banner-left {
+        .banner {
+            width: 100%;
+            position: absolute;
+            top: 25%;
+            text-align: center;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
-            justify-content: center;
-
-            .banner-heading {
-                font-size: 6rem;
-                font-weight: 300;
-                margin-bottom: 3rem;
-            }
-            
-            .banner-subheading {
-                font-size: 1.8rem;
-                width: 50%;
-                margin: 0 auto 4rem auto;
-            }
-
-            .banner-actions {
+    
+            .banner-left {
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                .banner-heading {
+                    font-size: 6rem;
+                    font-weight: 300;
+                    margin-bottom: 3rem;
+                }
                 
-                .get-started-btn {
-                    padding: 1.5rem;
-                    background-color: #000;
-                    color: #fff;
-                    border-radius: .3rem;
-                    margin-right: 2rem;
+                .banner-subheading {
+                    font-size: 1.8rem;
+                    width: 50%;
+                    margin: 0 auto 4rem auto;
                 }
-
-                .lets-talk-btn {
-                    padding: 1.5rem;
-                    border-radius: .3rem;
-                    color: #000;
-                    border-style: solid;
-                    border-width: .1rem;
-                    border-color: #c3e7f1;
-                    position: relative;
-                }
-
-                .lets-talk-btn::after {
-                    content: "";
-                    position: absolute;
-                    top: .5rem;
-                    left: .5rem;
-                    z-index: -1;
-                    width: 100%;
-                    height: 100%;
-                    background-color: #e0f2fd;
+    
+                .banner-actions {
+                    display: flex;
+                    flex-direction: row;
+                    
+                    .get-started-btn {
+                        padding: 1.5rem;
+                        background-color: #000;
+                        color: #fff;
+                        border-radius: .3rem;
+                        margin-right: 2rem;
+                    }
+    
+                    .lets-talk-btn {
+                        padding: 1.5rem;
+                        border-radius: .3rem;
+                        color: #000;
+                        border-style: solid;
+                        border-width: .1rem;
+                        border-color: #c3e7f1;
+                        position: relative;
+                    }
+    
+                    .lets-talk-btn::after {
+                        content: "";
+                        position: absolute;
+                        top: .5rem;
+                        left: .5rem;
+                        z-index: -1;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #e0f2fd;
+                    }
                 }
             }
-        }
-
-        .banner-right {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            
-            img {
-                width: 50rem;
-            } 
+    
+            .banner-right {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                
+                img {
+                    width: 50rem;
+                } 
+            }
         }
     }
 }
@@ -228,7 +232,60 @@ html {
 
 .section-2 {
     width: 100%;
-    display: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .clients-all-talents-wrapper {
+        width: 120rem;
+        display: flex;
+        flex-direction: column;
+
+        .clients {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                margin: 1rem;
+                width: 10rem;
+            }
+        }
+
+        .all-talents {
+            background-color: #293339;
+            color: #fff;
+            border-radius: 2rem;
+        }
+    }
+
+    .all-talents {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 5rem;
+        gap: 5rem;
+
+        .description {
+
+        }
+
+        .profile-description {
+            .profile {
+                img {
+                    height: 10rem;
+                    width: 10rem;
+                }
+            }
+
+            .description {
+
+            }
+        }
+    }
 }
 
 /* End Section 2 */
