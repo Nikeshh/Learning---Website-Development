@@ -61,10 +61,6 @@ html {
 
 /* Front page */
 
-.front-page {
-    display: none;
-}
-
 /* Section 1 */
 .section-1 {
     width: 100%;
@@ -561,6 +557,10 @@ html {
 /* End of Login Page */
 
 /* Signup Page */
+
+.signup-page {
+    display: none;
+}
 
 .signup-page {
     width: 100%;
