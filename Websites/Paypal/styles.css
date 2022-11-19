@@ -560,14 +560,10 @@ html {
 /* Signup Page */
 
 .signup-page {
-    display: none;
-}
-
-.signup-page {
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(112, 112, 112, .9), rgba(255, 255, 255, .8) 10%);
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
 }
@@ -666,3 +662,60 @@ html {
 }
 
 /* End of Signup Page */
+
+/* Responsive */
+
+@media(max-width: 1500px) {
+    .nav-dropdown {
+        padding: 0 25rem;
+    }
+
+    .nav-dropdown-item {
+        margin: 2rem 6rem;
+    }
+
+    .features {
+        width: 80%;
+    }
+
+    .feature {
+        padding: 0 3rem;
+    }
+}
+
+@media(max-width: 1400px) {
+    html {
+        font-size: 55%;
+    }
+
+    .navbar {
+        width: 100rem;
+    }
+
+    .section-1 {
+        height: 70vh;
+    }
+
+    .banner-paragraph {
+        width: 70%;
+    }
+
+    .services {
+        width: 90%;
+    }
+
+    .features {
+        width: 90%;
+    }
+
+    .section-4-content {
+        width: 80%;
+    }
+
+    .section-4-img-wrapper {
+        width: 40%;
+        margin-right: 6rem;
+    }
+}
+
+/* End of Responsive */
