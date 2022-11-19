@@ -562,5 +562,17 @@ html {
 
 /* Signup Page */
 
+.signup-page {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(112, 112, 112, .9), rgba(255, 255, 255, .8) 10%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-left-images img {
+    width: 18rem;
+}
 
 /* End of Signup Page */
