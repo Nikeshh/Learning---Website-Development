@@ -32,7 +32,38 @@ html {
     font-weight: 600;
     cursor: pointer;
 }
+
+.logo {
+    font-size: 3.5rem;
+    font-style: italic;
+    font-weight: 800;
+    color: #fff;
+    position: relative;
+}
+
+/* Front P */
+.p-1 {
+    font-size: 4.5rem;
+    margin-right: 1rem;
+    position: relative;
+    z-index: 999;
+}
+
+/* Back Grey P */
+.p-2 {
+    font-size: 4.5rem;
+    color: #bbb;
+    position: absolute; /* Relative to navbar-logo (parent) */
+    top: 0.4rem;
+    left: 0.5rem;
+}
 /* End of Core */
+
+/* Front page */
+
+.front-page {
+    display: none;
+}
 
 /* Section 1 */
 .section-1 {
@@ -58,31 +89,6 @@ html {
     flex-direction: row;
     justify-content: space-between;
     align-items: center; /* Vertical alignment */
-}
-
-.navbar-logo {
-    font-size: 3.5rem;
-    font-style: italic;
-    font-weight: 800;
-    color: #fff;
-    position: relative;
-}
-
-/* Front P */
-.p-1 {
-    font-size: 4.5rem;
-    margin-right: 1rem;
-    position: relative;
-    z-index: 999;
-}
-
-/* Back Grey P */
-.p-2 {
-    font-size: 4.5rem;
-    color: #bbb;
-    position: absolute; /* Relative to navbar-logo (parent) */
-    top: 0.4rem;
-    left: 0.5rem;
 }
 
 .nav-list {
@@ -433,3 +439,8 @@ html {
 }
 
 /* End of Section 5 */
+
+/* End of front page */
+
+/* Login Page */
+/* End of Login Page */
