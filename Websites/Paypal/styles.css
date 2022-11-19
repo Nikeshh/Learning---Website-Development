@@ -716,6 +716,10 @@ html {
         width: 40%;
         margin-right: 6rem;
     }
+
+    .signup-page {
+        background: linear-gradient(to bottom, rgba(112, 112, 112, .9), rgba(255, 255, 255, .8) 12%);
+    }
 }
 
 /* End of Responsive */
