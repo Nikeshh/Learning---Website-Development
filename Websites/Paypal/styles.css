@@ -722,4 +722,16 @@ html {
     }
 }
 
+@media(max-width: 1200px) {
+    .signup-page-top {
+        width: 90rem;
+    }
+
+    .signup-page-content {
+        width: 90rem;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* End of Responsive */
