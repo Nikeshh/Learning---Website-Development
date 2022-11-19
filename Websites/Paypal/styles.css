@@ -157,10 +157,6 @@ html {
     transition: transform .3;
 }
 
-.nav-list-item:hover .nav-list-link i {
-    transform: rotateZ(180deg);
-}
-
 .navbar-btn {
     width: 8rem;
     padding: 0.7rem;
@@ -853,6 +849,11 @@ html {
         flex-direction: column;
         padding-top: 2rem;
         z-index: 200;
+        transition: left .6s cubic-bezier(1, 0, 0, 1);
+    }
+
+    .change .nav-list {
+        left: 0;
     }
 
     .nav-dropdown-personal, 
