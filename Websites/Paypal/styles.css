@@ -791,6 +791,7 @@ html {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
+        transition: transform .6s cubic-bezier(1, 0, 0, 1);
     }
 
     .change .menu {
