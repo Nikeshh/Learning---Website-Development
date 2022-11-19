@@ -779,7 +779,7 @@ html {
         position: absolute;
         top: 4rem;
         left: 50%;
-        transform: translateX(-50%, -50%);
+        transform: translate(-50%, -50%);
     }
 
     .menu {
@@ -798,6 +798,7 @@ html {
         position: fixed;
         top: 2rem;
         left: 6rem;
+        background-color: #eee;
     }
 
     .menu-icon {
@@ -811,11 +812,31 @@ html {
         width: 2rem;
         height: .1rem;
         background-color: #fff;
+        transform-origin: left; /* Since the line transformation starts from center */
+    }
+
+    .change .line-1 {
+        transform: rotate(45deg);
+        background-color: #444;
+    }
+
+    .change .line-2 {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .change .line-3 {
+        transform: rotate(-45deg);
+        background-color: #444;
     }
 
     .menu span {
         font-size: 1.8rem;
         color: #fff;
+    }
+
+    .change .menu span {
+        color: #555;
     }
 
     .nav-list, 
