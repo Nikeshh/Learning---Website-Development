@@ -1,3 +1,11 @@
+// Core
+
+window.addEventListener('resize', () => {
+    window.location.reload()
+})
+
+// End of Core
+
 // Pages
 document.querySelectorAll('.logo').forEach(logo => {
     logo.addEventListener('click', () => {
@@ -66,4 +74,5 @@ if(window.innerWidth < 1000) {
         })
     })
 }
+
 // End of Navigation
