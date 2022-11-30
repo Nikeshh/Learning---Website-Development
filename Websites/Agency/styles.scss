@@ -145,12 +145,14 @@ html {
     }
 
     .banner-wrapper {
-        width: 120rem;
+        width: 100%;
+        height: calc(100vh - 8rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .banner {
-            width: 100%;
-            position: absolute;
-            top: 30%;
+            width: 120rem;
             text-align: center;
             display: flex;
             flex-direction: row;
@@ -159,19 +161,20 @@ html {
             .banner-left {
                 display: flex;
                 flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                justify-content: left;
+                text-align: left;
+                padding-right: 18rem;
     
                 .banner-heading {
                     font-size: 6rem;
-                    font-weight: 300;
+                    font-weight: 500;
                     margin-bottom: 3rem;
                 }
                 
                 .banner-subheading {
                     font-size: 1.8rem;
-                    width: 50%;
                     margin: 0 auto 4rem auto;
+                    font-weight: 300;
                 }
     
                 .banner-actions {
