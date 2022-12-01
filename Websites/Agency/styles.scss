@@ -561,7 +561,7 @@ html {
 
                 .details {
                     margin-top: 1rem;
-                    
+
                     .name {
                         font-weight: 500;
                         font-size: 1.5rem;
@@ -594,6 +594,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 10rem;
 
     .wrapper {
         width: 120rem;
@@ -604,16 +605,19 @@ html {
         padding: 5rem;
         border-radius: 2rem;
         background-color: #70d4a7;
+        z-index: -2;
 
         .heading {
             font-size: 6rem;
-            font-weight: 300;
-            margin-bottom: 3rem;
+            font-weight: 400;
+            margin-bottom: 2rem;
+            color: white;
         }
         
         .sub-heading {
             font-size: 1.8rem;
             margin: 0 auto 4rem auto;
+            color: white;
         }
 
         .actions {
@@ -621,7 +625,7 @@ html {
             flex-direction: row;
             
             .get-started-btn {
-                padding: 1.5rem;
+                padding: 1.5rem 2rem;
                 background-color: #000;
                 color: #fff;
                 border-radius: .3rem;
@@ -629,7 +633,7 @@ html {
             }
 
             .lets-talk-btn {
-                padding: 1.5rem;
+                padding: 1.5rem 2rem;
                 border-radius: .3rem;
                 color: #000;
                 border-style: solid;
@@ -646,7 +650,7 @@ html {
                 z-index: -1;
                 width: 100%;
                 height: 100%;
-                background-color: #e0f2fd;
+                background-color: white;
             }
         }
     }
