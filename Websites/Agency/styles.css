@@ -579,6 +579,7 @@ html {
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 10rem;
 }
 .section-8 .footer {
   width: 120rem;
@@ -595,18 +596,99 @@ html {
   align-items: center;
   gap: 10rem;
 }
-.section-8 .footer .footer-top .company-details .stars {
+.section-8 .footer .footer-top .company-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.section-8 .footer .footer-top .company-details .logo {
   display: flex;
   flex-direction: row;
 }
+.section-8 .footer .footer-top .company-details .logo .m {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 3rem;
+  font-style: italic;
+  font-family: "Nerko One", cursive;
+}
+.section-8 .footer .footer-top .company-details .logo .o {
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 3rem;
+  font-family: "Nerko One", cursive;
+}
+.section-8 .footer .footer-top .company-details .logo .l {
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 3rem;
+  font-family: "Nerko One", cursive;
+}
+.section-8 .footer .footer-top .company-details .logo .t {
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 3rem;
+  font-family: "Nerko One", cursive;
+}
+.section-8 .footer .footer-top .company-details .logo .e {
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 3rem;
+  font-family: "Nerko One", cursive;
+}
+.section-8 .footer .footer-top .company-details .logo .x {
+  text-transform: lowercase;
+  font-weight: 300;
+  font-size: 3rem;
+  font-family: "Nerko One", cursive;
+}
+.section-8 .footer .footer-top .company-details .stars {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+}
+.section-8 .footer .footer-top .company-details .stars .star,
+.section-8 .footer .footer-top .company-details .stars .star-half {
+  background-color: #2b8d72;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  color: white;
+}
+.section-8 .footer .footer-top .company-details .ratings .rating {
+  font-weight: 600;
+}
+.section-8 .footer .divider {
+  margin-top: 2rem;
+  height: 0.1rem;
+  width: 100%;
+  background-color: #000;
+}
 .section-8 .footer .footer-bottom {
   display: flex;
+  margin-top: 2rem;
+  width: 100%;
+  align-items: center;
 }
 .section-8 .footer .footer-bottom .policies {
   display: flex;
 }
+.section-8 .footer .footer-bottom .policies .policy-item {
+  margin: auto 0.3rem;
+}
 .section-8 .footer .footer-bottom .social-icons {
   display: flex;
+  margin-left: auto;
+}
+.section-8 .footer .footer-bottom .social-icons .social-icon {
+  margin: auto 0.3rem;
+  border: 0.1rem solid #000;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* End Section 8 *//*# sourceMappingURL=styles.css.map */
