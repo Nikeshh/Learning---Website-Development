@@ -406,6 +406,9 @@ html {
 .section-4 {
     width: 100%;
     background-color: #f5f7fb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     .wrapper {
         width: 120rem;
@@ -413,13 +416,29 @@ html {
         flex-direction: row;
         justify-content: center;
         padding: 5rem;
-        gap: 5rem;
+        gap: 10rem;
         
         .left {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
+            align-items: left;
+            margin-right: 20rem;
+            gap: 2rem;
+
+            .title {
+                color: #559dd8;
+            }
+
+            .heading {
+                font-size: 3rem;
+                font-weight: 600;
+            }
+
+            .sub-heading {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
         }
     
         .right {
@@ -428,7 +447,7 @@ html {
             align-items: center;
     
             img {
-                width: 20rem;
+                width: 50rem;
             }
         }
     }
@@ -438,6 +457,9 @@ html {
 /* Section 5 */
 .section-5 {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 
     .wrapper {
         width: 120rem;
@@ -445,9 +467,13 @@ html {
         flex-direction: row;
         justify-content: center;
         padding: 5rem;
-        gap: 5rem;
+        gap: 10rem;
 
         .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
             img {
                 width: 50rem;
                 height: fit-content;
@@ -455,6 +481,23 @@ html {
         }
 
         .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: left;
+            margin-right: 20rem;
+            gap: 2rem;
+
+            .heading {
+                font-size: 3rem;
+                font-weight: 600;
+            }
+
+            .sub-heading {
+                font-size: 1.5rem;
+                font-weight: 300;
+            }
+
             .action-btn {
                 width: fit-content;
                 padding: 1.5rem;
