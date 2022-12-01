@@ -460,6 +460,9 @@ html {
 /* Section 6 */
 .section-6 {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #f5f7fb;
 }
 .section-6 .wrapper {
@@ -467,12 +470,20 @@ html {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   padding: 5rem;
-  gap: 5rem;
+  gap: 10rem;
+}
+.section-6 .wrapper .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-right: 20rem;
+  gap: 2rem;
 }
 .section-6 .wrapper .left .testimonial {
-  font-size: 1.2rem;
+  font-size: 2rem;
+  font-weight: 300;
 }
 .section-6 .wrapper .left .profile-details img {
   width: 5rem;
@@ -480,8 +491,24 @@ html {
   height: -moz-fit-content;
   height: fit-content;
 }
+.section-6 .wrapper .left .profile-details .details {
+  margin-top: 1rem;
+}
+.section-6 .wrapper .left .profile-details .details .name {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+.section-6 .wrapper .left .profile-details .details .designation {
+  font-style: italic;
+}
+.section-6 .wrapper .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .section-6 .wrapper .right img {
-  width: 20rem;
+  width: 40rem;
+  border-radius: 3rem;
 }
 
 /* End Section 6 */
