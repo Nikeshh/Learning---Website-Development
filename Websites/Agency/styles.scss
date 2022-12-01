@@ -125,7 +125,7 @@ html {
                 }
 
                 .login-btn {
-                    color: white;
+                    color: black;
                 }
 
                 .get-started-btn {
@@ -234,48 +234,99 @@ html {
         width: 120rem;
         display: flex;
         flex-direction: column;
+        margin: 10rem auto;
+        gap: 10rem;
 
         .clients {
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            margin: auto 15rem;
 
             img {
                 margin: 1rem;
-                width: 10rem;
+                width: 7rem;
             }
-        }
-
-        .all-talents {
-            background-color: #293339;
-            color: #fff;
-            border-radius: 2rem;
         }
     }
 
     .all-talents {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         padding: 5rem;
-        gap: 5rem;
+        background-color: #293339;
+        color: #fff;
+        border-radius: 2rem;
 
-        .description {
+        .all-talents-description {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .all-talents-heading {
+                font-size: 3rem;
+                font-weight: 400;
+            }
+
+            .all-talents-sub-heading {
+                font-size: 1.5rem;
+                font-weight: 200;
+            }
 
         }
 
         .profile-description {
+            display: flex;
+            flex-direction: row;
+
             .profile {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                text-align: center;
+
                 img {
-                    height: 10rem;
-                    width: 10rem;
+                    height: 5rem;
+                    width: 5rem;
+                    border-radius: 50%;
+                }
+
+                .tag {
+                    font-size: .9rem;
+                    white-space: nowrap;
+                    border-radius: 1rem;
+                    padding: .4rem 1rem;
+                }
+
+                .available {
+                    background-color: #39bc65;
+                }
+
+                .not-available {
+                    background-color: #eb5a5c;
                 }
             }
 
             .description {
+                padding: 1.5rem 2rem;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
 
+                .heading {
+                    text-transform: uppercase;
+                    font-weight: 100;
+                }
+
+                .sub-heading {
+                    font-weight: 300;
+                    font-size: 1.2rem;
+                }
             }
         }
     }
