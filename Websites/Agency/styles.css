@@ -286,6 +286,9 @@ html {
 /* Section 3 */
 .section-3 {
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 .section-3 .wrapper {
   width: 120rem;
@@ -300,6 +303,24 @@ html {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+}
+.section-3 .wrapper .right {
+  margin-left: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.section-3 .wrapper .right .heading {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.section-3 .wrapper .right .sub-heading-1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.section-3 .wrapper .right .sub-heading-2 {
+  font-size: 1.5rem;
+  font-weight: 300;
 }
 .section-3 .wrapper .right .action-btn {
   width: -webkit-fit-content;
